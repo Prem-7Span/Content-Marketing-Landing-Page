@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Marketing</title>
+    <link rel="stylesheet" href="output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <!--- Main content -->
+  <body>
+    <!--- Header -->
+    <header>
+      <nav class="container h-20 md:py-12 flex justify-between items-center">
+        <div><img src="../Images/Content-logo.svg" alt="nav-logo" /></div>
+
+        <!--- Menu items -->
+        <div
+          class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-20 left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row items-center px-5 py-2 gap-4"
+        >
+          <!--  -->
+          <a href="#">Home</a>
+          <a href="#">Case Studies</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <!--- Need to remove -->
+        <ion-icon
+          name="menu"
+          class="text-3xl cursor-pointer md:hidden"
+          onclick="onToggleMenu(this)"
+        ></ion-icon>
+      </nav>
+    </header>
+
+    <main>
+      <!--- Hero page -->
+      <section
+        id="hero-page"
+        class="sm:bg-hero-img bg-purplePrimary bg-no-repeat bg-cover sm:h-auto h-fit sm:pb-40"
+      >
+        <div class="container">
+          <div
+            class="w-full md:py-44 sm:w-3/6 flex flex-col gap-5 items-start md:inline-block py-7 md:pl-6"
+          >
+            <!--- Title -->
+            <h1
+              class="font-Poppins font-extrabold text-purpleFont text-4xl md:text-5xl"
+            >
+              Content marketing for startups
+            </h1>
+            <p
+              class="font-Poppins font-normal text-purpleFont2 text-sm md:text-lg md:pt-8 md:pb-14"
+            >
+              Get high-quality content that drives organic traffic to your blog,
+              by boosting your DA.
+            </p>
+
+            <!--- "Get started" Button -->
+            <button
+              class="px-10 py-4 rounded-lg font-Poppins font-semibold text-white bg-purpleButton md:text-sm"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <!--- Bg image cards -->
+        <img src="../Images/cards.svg" alt="" class="sm:hidden" />
+      </section>
+
+      <!--- Services -->
+      <section
+        id="services"
+        class="bg-no-repeat md:pt-40 md:pb-28 bg-service-img bg-bottom"
+      >
+        <div
+          class="sm:grid grid-cols-3 flex flex-col justify-center items-center top-40 gap-7 container"
+        >
+          <!--- Service card 1 -->
+          <div
+            id="service-card-1"
+            class="bg-white rounded-xl h-full px-7 py-16"
+          >
+            <img src="../Images/Icon-1-services.svg" alt="Icon-1" />
+
+            <!--- Service card 3 content -->
+            <div class="pt-12">
+              <h3 class="font-Poppins font-semibold text-lg text-purpleFont1">
+                We create & plan a customized content strategy for your blog
+              </h3>
+              <p class="font-Poppins font-normal text-sm text-purpleFont2 pt-6">
+                Get paid by your listeners, every month, predictably. No CPMs,
+                and no scheduling required.
+              </p>
+            </div>
+          </div>
+
+          <!--- Service card 2 -->
+          <div
+            id="service-card-2"
+            class="bg-white rounded-xl h-full px-7 py-16"
+          >
+            <img src="../Images/Icon-2-services.svg" alt="Icon-1" />
+
+            <!--- Service card 2 content -->
+            <div class="pt-12">
+              <h3 class="font-Poppins font-semibold text-lg text-purpleFont1">
+                We write articles that blend content with optimization
+              </h3>
+              <p class="font-Poppins font-normal text-sm text-purpleFont2 pt-6">
+                Get paid by your listeners, every month, predictably. No CPMs,
+                and no scheduling required.
+              </p>
+            </div>
+          </div>
+
+          <!--- Service card 3 -->
+          <div
+            id="service-card-3"
+            class="bg-white rounded-xl px-7 py-16 md:h-full"
+          >
+            <img src="../Images/Icon-3-services.svg" alt="Icon-1" />
+
+            <!--- Service card 3 content -->
+            <div class="pt-12">
+              <h3 class="font-Poppins font-semibold text-lg text-purpleFont1">
+                We promote your blog posts so they can get backlinks
+              </h3>
+              <p class="font-Poppins font-normal text-sm text-purpleFont2 pt-6">
+                Get paid by your listeners, every month, predictably. No CPMs,
+                and no scheduling required.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Features -->
+      <section id="features" class="bg-features-img">
+        <div
+          class="grid md:grid-cols-2 md:flex justify-center items-center gap-16 container"
+        >
+          <div id="img" class="md:pt-8 md:pb-20">
+            <img src="../Images/features-2-img.png" alt="card-img" class="" />
+          </div>
+
+          <!--- Features content -->
+          <div id="content" class="max-w-md">
+            <h2 class="font-Poppins font-bold text-4xl text-purpleFont">
+              The content marketing service focused on Results
+            </h2>
+            <p class="font-Poppins font-normal text-sm text-purpleFont2 pt-7">
+              List a product once and it will be published across all of your
+              connected sales channels. Similarly, when you make changes to your
+              listing
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--- Services 2 -->
+      <section
+        id="services-2"
+        class="bg-service-2-img bg-top bg-no-repeat h-fit"
+      >
+        <div class="container">
+          <div
+            class="flex flex-col-reverse sm:flex-row justify-center items-center gap-12 md:py-20"
+          >
+            <!--- Information -->
+            <div class="max-w-xl">
+              <!--- Title -->
+              <h3 class="font-Poppins font-bold text-4xl text-purpleFont">
+                What you get with our content marketing for startups service
+              </h3>
+
+              <!--- Description -->
+              <p
+                class="font-Poppins font-normal text-sm md:text-lg text-purpleFont2 pt-6 md:w-3/4"
+              >
+                List a product once and it will be published across all of your
+                connected sales channels. Similarly, when you make changes to
+                your listing
+              </p>
+            </div>
+            <div>
+              <!--- Bg image -->
+              <img src="../Images/service-2-cards.png" alt="service-2-cards" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Features 2 -->
+      <section
+        id="features-2"
+        class="bg-features-2-img bg-bottom bg-cover bg-no-repeat"
+      >
+        <div class="container">
+          <div class="md:flex py-16 space-x-4">
+            <!--- Informative cards -->
+            <div
+              class="cards grid grid-cols-2 gap-2 justify-center items-center"
+            >
+              <!--- Single column cards -->
+              <div id="cards" class="md:space-y-2 space-y-5">
+                <!--- Card 1 -->
+                <div
+                  id="card-1"
+                  class="flex rounded-lg bg-white px-3 py-7 hover:-translate-y-4 hover:shadow-2xl duration-500"
+                >
+                  <div>
+                    <p class="font-Poppins font-normal text-gray-400 text-sm">
+                      New Leads
+                    </p>
+                    <p class="font-Poppins font-semibold text-lg pt-2 pb-4">
+                      3,729
+                    </p>
+                    <img src="../Images/no-features-2-img.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="../Images/curve-features-2.svg" alt="curve-img" />
+                  </div>
+                </div>
+
+                <!--- Card 2 -->
+                <div
+                  id="card-2"
+                  class="rounded-lg bg-white px-5 py-7 flex flex-col justify-center items-center hover:-translate-y-4 hover:shadow-2xl duration-500"
+                >
+                  <p
+                    class="font-Poppins font-semibold text-lg text-purpleButton"
+                  >
+                    3,729
+                  </p>
+                  <p
+                    class="font-Poppins font-normal text-xs md:text-sm text-purpleFont2 pt-6"
+                  >
+                    We strongly believe that successful content marketing
+                    shouldn't drive you.
+                  </p>
+                </div>
+              </div>
+
+              <!--- Card 3 -->
+              <div
+                id="card-3"
+                class="rounded-lg bg-white px-5 py-7 flex flex-col justify-center items-center hover:-translate-y-4 hover:shadow-2xl duration-500"
+              >
+                <p class="font-Poppins font-semibold text-lg text-red-600">
+                  Simple
+                </p>
+                <p
+                  class="font-Poppins font-normal text-xs pt-6 md:text-sm text-purpleFont2"
+                >
+                  We strongly believe that successful content marketing
+                  shouldn't drive you.
+                </p>
+              </div>
+            </div>
+
+            <!--- Features 2 content  -->
+            <div id="content" class="max-w-2xl pt-10 md:pt-0">
+              <h3
+                class="font-Poppins font-bold md:text-4xl text-xl text-purpleFont"
+              >
+                Our Content Writing & Marketing Service costs $2,500/month.
+              </h3>
+              <p
+                class="font-Poppins font-normal text-lg text-purpleFont2 pt-6 w-3/4"
+              >
+                List a product once and it will be published across all of your
+                connected sales channels. Similarly, when you make changes to
+                your listing
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- FAQs -->
+      <section id="FAQ" class="bg-faq-img bg-cover">
+        <div class="container">
+          <div id=" heading">
+            <!--- Title -->
+            <h1
+              class="font-Poppins font-semibold text-3xl text-purpleFont text-center md:pt-20"
+            >
+              Frequently Ask Questions
+            </h1>
+          </div>
+
+          <div
+            id="groups"
+            class="md:grid grid-cols-2 gap-1 md:gap-5 md:pt-32 pt-7 md:pb-40"
+          >
+            <!--- Column 1 -->
+            <div id="group-1" class="services-category py-6 space-y-5">
+              <!--- Quest 1 -->
+              <details class="border rounded bg-white">
+                <summary
+                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                >
+                  <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
+                  <p class="font-Poppins font-semibold text-sm">
+                    How long until we deliver your first blog post?
+                  </p>
+                </summary>
+                <p
+                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                >
+                  It takes 2-3 weeks to get your first blog post ready. That
+                  includes the in-depth research & creation of your monthly
+                  content marketing strategy that we MUST do before writing your
+                  first blog post.
+                </p>
+              </details>
+
+              <!--- Quest 2 -->
+              <details class="border rounded bg-white">
+                <summary
+                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                >
+                  <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
+                  <p class="font-Poppins font-semibold text-sm">
+                    How long until we deliver your first blog post?
+                  </p>
+                </summary>
+                <p
+                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                >
+                  It takes 2-3 weeks to get your first blog post ready. That
+                  includes the in-depth research & creation of your monthly
+                  content marketing strategy that we MUST do before writing your
+                  first blog post.
+                </p>
+              </details>
+
+              <!--- Quest 3 -->
+              <details class="border rounded bg-white">
+                <summary
+                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                >
+                  <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
+                  <p class="font-Poppins font-semibold text-sm">
+                    How long until we deliver your first blog post?
+                  </p>
+                </summary>
+                <p
+                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                >
+                  It takes 2-3 weeks to get your first blog post ready. That
+                  includes the in-depth research & creation of your monthly
+                  content marketing strategy that we MUST do before writing your
+                  first blog post.
+                </p>
+              </details>
+            </div>
+
+            <!--- Column 2 -->
+            <div
+              id="group-2"
+              class="hidden md:inline-block services-category py-6 space-y-5"
+            >
+              <!--- Quest 1 -->
+              <details class="border rounded bg-white">
+                <summary
+                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                >
+                  <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
+                  <p class="font-Poppins font-semibold text-sm">
+                    How long until we deliver your first blog post?
+                  </p>
+                </summary>
+                <p
+                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                >
+                  It takes 2-3 weeks to get your first blog post ready. That
+                  includes the in-depth research & creation of your monthly
+                  content marketing strategy that we MUST do before writing your
+                  first blog post.
+                </p>
+              </details>
+
+              <!--- Quest 2 -->
+              <details class="border rounded bg-white">
+                <summary
+                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                >
+                  <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
+                  <p class="font-Poppins font-semibold text-sm">
+                    How long until we deliver your first blog post?
+                  </p>
+                </summary>
+                <p
+                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                >
+                  It takes 2-3 weeks to get your first blog post ready. That
+                  includes the in-depth research & creation of your monthly
+                  content marketing strategy that we MUST do before writing your
+                  first blog post.
+                </p>
+              </details>
+
+              <!--- Quest 3 -->
+              <details class="border rounded bg-white">
+                <summary
+                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                >
+                  <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
+                  <p class="font-Poppins font-semibold text-sm">
+                    How long until we deliver your first blog post?
+                  </p>
+                </summary>
+                <p
+                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                >
+                  It takes 2-3 weeks to get your first blog post ready. That
+                  includes the in-depth research & creation of your monthly
+                  content marketing strategy that we MUST do before writing your
+                  first blog post.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- CTA -->
+      <section id="CTA" class="bg-cta-img bg-cover">
+        <div class="flex justify-center items-center">
+          <div class="px-100 py-32 max-w-3xl text-center">
+            <!--- Description -->
+            <h1
+              class="font-Poppins font-semibold text-purpleFont text-xl md:text-5xl pb-8 md:pb-16"
+            >
+              Interested in growing your online presence?
+            </h1>
+
+            <!--- "Let's talk" button -->
+            <button
+              class="font-Poppins font-normal text-sm text-white px-12 py-3 bg-purpleButton shadow-2xl"
+            >
+              Let's Talk
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--- Footer -->
+    <footer>
+      <div class="container bg-white">
+        <div
+          class="py-7 flex justify-around md:flex-row flex-col-reverse md:py-0"
+        >
+          <div class="max-w-52 py-7 md:pt-40">
+            <h3
+              class="font-Poppins font-semibold text-lg text-purpleButton pb-4"
+            >
+              Content...
+            </h3>
+            <p class="font-Poppins font-normal text-gray-400 text-sm">
+              Got questions? Reach us at hey@email.com
+            </p>
+          </div>
+
+          <div class="md:flex gap-20 md:py-40">
+            <div>
+              <ul
+                class="font-Poppins font-normal text-gray-400 space-y-5 text-sm"
+              >
+                <li class="font-Poppins font-semibold text-black text-lg">
+                  Menu
+                </li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+                <li>FAQ</li>
+              </ul>
+            </div>
+
+            <div>
+              <ul
+                class="font-Poppins font-normal text-gray-400 space-y-5 text-sm pt-7 md:pt-0"
+              >
+                <li class="font-Poppins font-semibold text-black text-lg">
+                  Social
+                </li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+              </ul>
+            </div>
+
+            <div>
+              <ul
+                class="font-Poppins font-normal text-gray-400 space-y-5 text-sm pt-7 md:pt-0"
+              >
+                <li class="font-Poppins font-semibold text-black text-lg">
+                  Legal
+                </li>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+                <li>Legal Notice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
