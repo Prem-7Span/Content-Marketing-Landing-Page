@@ -19,3 +19,7 @@ summary::after {
   background-size: cover;
   transition: 0.3s;
 }
+
+.menu-open {
+  top: 0;
+}

@@ -19,25 +19,32 @@
   <body>
     <!--- Header -->
     <header>
-      <nav class="container h-20 md:py-12 flex justify-between items-center">
+      <nav class="container flex items-center justify-between w-full h-20">
         <div><img src="../Images/Content-logo.svg" alt="nav-logo" /></div>
 
         <!--- Menu items -->
         <div
-          class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-20 left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row items-center px-5 py-2 gap-4"
+          class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-20 left-0 top-[-100%] right-0"
+          id="links"
         >
-          <!--  -->
-          <a href="#">Home</a>
-          <a href="#">Case Studies</a>
-          <a href="#">Contact</a>
+          <!--Nav Items-->
+          <ul
+            class="flex flex-col items-center gap-4 px-5 py-2 md:space-y-0 md:flex-row"
+          >
+            <li><a href="#hero-page">Home</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
 
-        <!--- Need to remove -->
-        <ion-icon
-          name="menu"
-          class="text-3xl cursor-pointer md:hidden"
-          onclick="onToggleMenu(this)"
-        ></ion-icon>
+        <!--- Mobile Button -->
+        <button class="md:hidden">
+          <ion-icon
+            name="menu"
+            class="text-3xl"
+            onclick="onToggleMenu(this)"
+          ></ion-icon>
+        </button>
       </nav>
     </header>
 
@@ -45,20 +52,20 @@
       <!--- Hero page -->
       <section
         id="hero-page"
-        class="sm:bg-hero-img bg-purplePrimary bg-no-repeat bg-cover sm:h-auto h-fit sm:pb-40"
+        class="bg-no-repeat bg-cover sm:bg-hero-img bg-purplePrimary sm:h-auto h-fit sm:pb-40"
       >
         <div class="container">
           <div
-            class="w-full md:py-44 sm:w-3/6 flex flex-col gap-5 items-start md:inline-block py-7 md:pl-6"
+            class="flex flex-col items-start w-full gap-5 md:py-44 sm:w-3/6 md:inline-block py-7 md:pl-6"
           >
             <!--- Title -->
             <h1
-              class="font-Poppins font-extrabold text-purpleFont text-4xl md:text-5xl"
+              class="text-4xl font-extrabold font-Poppins text-purpleFont md:text-5xl"
             >
               Content marketing for startups
             </h1>
             <p
-              class="font-Poppins font-normal text-purpleFont2 text-sm md:text-lg md:pt-8 md:pb-14"
+              class="text-sm font-normal font-Poppins text-purpleFont2 md:text-lg md:pt-8 md:pb-14"
             >
               Get high-quality content that drives organic traffic to your blog,
               by boosting your DA.
@@ -66,7 +73,7 @@
 
             <!--- "Get started" Button -->
             <button
-              class="px-10 py-4 rounded-lg font-Poppins font-semibold text-white bg-purpleButton md:text-sm"
+              class="px-10 py-4 font-semibold text-white rounded-lg font-Poppins bg-purpleButton md:text-sm"
             >
               Get Started
             </button>
@@ -79,24 +86,24 @@
       <!--- Services -->
       <section
         id="services"
-        class="bg-no-repeat md:pt-40 md:pb-28 bg-service-img bg-bottom"
+        class="bg-bottom bg-no-repeat md:pt-40 md:pb-28 bg-service-img"
       >
         <div
-          class="sm:grid grid-cols-3 flex flex-col justify-center items-center top-40 gap-7 container"
+          class="container flex flex-col items-center justify-center grid-cols-3 sm:grid top-40 gap-7"
         >
           <!--- Service card 1 -->
           <div
             id="service-card-1"
-            class="bg-white rounded-xl h-full px-7 py-16"
+            class="h-full py-16 bg-white rounded-xl px-7"
           >
             <img src="../Images/Icon-1-services.svg" alt="Icon-1" />
 
             <!--- Service card 3 content -->
             <div class="pt-12">
-              <h3 class="font-Poppins font-semibold text-lg text-purpleFont1">
+              <h3 class="text-lg font-semibold font-Poppins text-purpleFont1">
                 We create & plan a customized content strategy for your blog
               </h3>
-              <p class="font-Poppins font-normal text-sm text-purpleFont2 pt-6">
+              <p class="pt-6 text-sm font-normal font-Poppins text-purpleFont2">
                 Get paid by your listeners, every month, predictably. No CPMs,
                 and no scheduling required.
               </p>
@@ -106,16 +113,16 @@
           <!--- Service card 2 -->
           <div
             id="service-card-2"
-            class="bg-white rounded-xl h-full px-7 py-16"
+            class="h-full py-16 bg-white rounded-xl px-7"
           >
             <img src="../Images/Icon-2-services.svg" alt="Icon-1" />
 
             <!--- Service card 2 content -->
             <div class="pt-12">
-              <h3 class="font-Poppins font-semibold text-lg text-purpleFont1">
+              <h3 class="text-lg font-semibold font-Poppins text-purpleFont1">
                 We write articles that blend content with optimization
               </h3>
-              <p class="font-Poppins font-normal text-sm text-purpleFont2 pt-6">
+              <p class="pt-6 text-sm font-normal font-Poppins text-purpleFont2">
                 Get paid by your listeners, every month, predictably. No CPMs,
                 and no scheduling required.
               </p>
@@ -125,16 +132,16 @@
           <!--- Service card 3 -->
           <div
             id="service-card-3"
-            class="bg-white rounded-xl px-7 py-16 md:h-full"
+            class="py-16 bg-white rounded-xl px-7 md:h-full"
           >
             <img src="../Images/Icon-3-services.svg" alt="Icon-1" />
 
             <!--- Service card 3 content -->
             <div class="pt-12">
-              <h3 class="font-Poppins font-semibold text-lg text-purpleFont1">
+              <h3 class="text-lg font-semibold font-Poppins text-purpleFont1">
                 We promote your blog posts so they can get backlinks
               </h3>
-              <p class="font-Poppins font-normal text-sm text-purpleFont2 pt-6">
+              <p class="pt-6 text-sm font-normal font-Poppins text-purpleFont2">
                 Get paid by your listeners, every month, predictably. No CPMs,
                 and no scheduling required.
               </p>
@@ -146,7 +153,7 @@
       <!--- Features -->
       <section id="features" class="bg-features-img">
         <div
-          class="grid md:grid-cols-2 md:flex justify-center items-center gap-16 container"
+          class="container grid items-center justify-center gap-16 md:grid-cols-2 md:flex"
         >
           <div id="img" class="md:pt-8 md:pb-20">
             <img src="../Images/features-2-img.png" alt="card-img" class="" />
@@ -154,10 +161,10 @@
 
           <!--- Features content -->
           <div id="content" class="max-w-md">
-            <h2 class="font-Poppins font-bold text-4xl text-purpleFont">
+            <h2 class="text-4xl font-bold font-Poppins text-purpleFont">
               The content marketing service focused on Results
             </h2>
-            <p class="font-Poppins font-normal text-sm text-purpleFont2 pt-7">
+            <p class="text-sm font-normal font-Poppins text-purpleFont2 pt-7">
               List a product once and it will be published across all of your
               connected sales channels. Similarly, when you make changes to your
               listing
@@ -169,22 +176,22 @@
       <!--- Services 2 -->
       <section
         id="services-2"
-        class="bg-service-2-img bg-top bg-no-repeat h-fit"
+        class="bg-top bg-no-repeat bg-service-2-img h-fit"
       >
         <div class="container">
           <div
-            class="flex flex-col-reverse sm:flex-row justify-center items-center gap-12 md:py-20"
+            class="flex flex-col-reverse items-center justify-center gap-12 sm:flex-row md:py-20"
           >
             <!--- Information -->
             <div class="max-w-xl">
               <!--- Title -->
-              <h3 class="font-Poppins font-bold text-4xl text-purpleFont">
+              <h3 class="text-4xl font-bold font-Poppins text-purpleFont">
                 What you get with our content marketing for startups service
               </h3>
 
               <!--- Description -->
               <p
-                class="font-Poppins font-normal text-sm md:text-lg text-purpleFont2 pt-6 md:w-3/4"
+                class="pt-6 text-sm font-normal font-Poppins md:text-lg text-purpleFont2 md:w-3/4"
               >
                 List a product once and it will be published across all of your
                 connected sales channels. Similarly, when you make changes to
@@ -202,26 +209,26 @@
       <!--- Features 2 -->
       <section
         id="features-2"
-        class="bg-features-2-img bg-bottom bg-cover bg-no-repeat"
+        class="bg-bottom bg-no-repeat bg-cover bg-features-2-img"
       >
         <div class="container">
-          <div class="md:flex py-16 space-x-4">
+          <div class="py-16 space-x-4 md:flex">
             <!--- Informative cards -->
             <div
-              class="cards grid grid-cols-2 gap-2 justify-center items-center"
+              class="grid items-center justify-center grid-cols-2 gap-2 cards"
             >
               <!--- Single column cards -->
-              <div id="cards" class="md:space-y-2 space-y-5">
+              <div id="cards" class="space-y-5 md:space-y-2">
                 <!--- Card 1 -->
                 <div
                   id="card-1"
-                  class="flex rounded-lg bg-white px-3 py-7 hover:-translate-y-4 hover:shadow-2xl duration-500"
+                  class="flex px-3 duration-500 bg-white rounded-lg py-7 hover:-translate-y-4 hover:shadow-2xl"
                 >
                   <div>
-                    <p class="font-Poppins font-normal text-gray-400 text-sm">
+                    <p class="text-sm font-normal text-gray-400 font-Poppins">
                       New Leads
                     </p>
-                    <p class="font-Poppins font-semibold text-lg pt-2 pb-4">
+                    <p class="pt-2 pb-4 text-lg font-semibold font-Poppins">
                       3,729
                     </p>
                     <img src="../Images/no-features-2-img.svg" alt="" />
@@ -234,15 +241,15 @@
                 <!--- Card 2 -->
                 <div
                   id="card-2"
-                  class="rounded-lg bg-white px-5 py-7 flex flex-col justify-center items-center hover:-translate-y-4 hover:shadow-2xl duration-500"
+                  class="flex flex-col items-center justify-center px-5 duration-500 bg-white rounded-lg py-7 hover:-translate-y-4 hover:shadow-2xl"
                 >
                   <p
-                    class="font-Poppins font-semibold text-lg text-purpleButton"
+                    class="text-lg font-semibold font-Poppins text-purpleButton"
                   >
                     3,729
                   </p>
                   <p
-                    class="font-Poppins font-normal text-xs md:text-sm text-purpleFont2 pt-6"
+                    class="pt-6 text-xs font-normal font-Poppins md:text-sm text-purpleFont2"
                   >
                     We strongly believe that successful content marketing
                     shouldn't drive you.
@@ -253,13 +260,13 @@
               <!--- Card 3 -->
               <div
                 id="card-3"
-                class="rounded-lg bg-white px-5 py-7 flex flex-col justify-center items-center hover:-translate-y-4 hover:shadow-2xl duration-500"
+                class="flex flex-col items-center justify-center px-5 duration-500 bg-white rounded-lg py-7 hover:-translate-y-4 hover:shadow-2xl"
               >
-                <p class="font-Poppins font-semibold text-lg text-red-600">
+                <p class="text-lg font-semibold text-red-600 font-Poppins">
                   Simple
                 </p>
                 <p
-                  class="font-Poppins font-normal text-xs pt-6 md:text-sm text-purpleFont2"
+                  class="pt-6 text-xs font-normal font-Poppins md:text-sm text-purpleFont2"
                 >
                   We strongly believe that successful content marketing
                   shouldn't drive you.
@@ -270,12 +277,12 @@
             <!--- Features 2 content  -->
             <div id="content" class="max-w-2xl pt-10 md:pt-0">
               <h3
-                class="font-Poppins font-bold md:text-4xl text-xl text-purpleFont"
+                class="text-xl font-bold font-Poppins md:text-4xl text-purpleFont"
               >
                 Our Content Writing & Marketing Service costs $2,500/month.
               </h3>
               <p
-                class="font-Poppins font-normal text-lg text-purpleFont2 pt-6 w-3/4"
+                class="w-3/4 pt-6 text-lg font-normal font-Poppins text-purpleFont2"
               >
                 List a product once and it will be published across all of your
                 connected sales channels. Similarly, when you make changes to
@@ -287,12 +294,12 @@
       </section>
 
       <!--- FAQs -->
-      <section id="FAQ" class="bg-faq-img bg-cover">
+      <section id="FAQ" class="bg-cover bg-faq-img">
         <div class="container">
           <div id=" heading">
             <!--- Title -->
             <h1
-              class="font-Poppins font-semibold text-3xl text-purpleFont text-center md:pt-20"
+              class="text-3xl font-semibold text-center font-Poppins text-purpleFont md:pt-20"
             >
               Frequently Ask Questions
             </h1>
@@ -300,22 +307,22 @@
 
           <div
             id="groups"
-            class="md:grid grid-cols-2 gap-1 md:gap-5 md:pt-32 pt-7 md:pb-40"
+            class="grid-cols-2 gap-1 md:grid md:gap-5 md:pt-32 pt-7 md:pb-40"
           >
             <!--- Column 1 -->
-            <div id="group-1" class="services-category py-6 space-y-5">
+            <div id="group-1" class="py-6 space-y-5 services-category">
               <!--- Quest 1 -->
-              <details class="border rounded bg-white">
+              <details class="bg-white border rounded">
                 <summary
-                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                  class="flex items-center gap-6 py-3 text-sm list-none md:font-semibold md:text-sm px-9"
                 >
                   <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
-                  <p class="font-Poppins font-semibold text-sm">
+                  <p class="text-sm font-semibold font-Poppins">
                     How long until we deliver your first blog post?
                   </p>
                 </summary>
                 <p
-                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                  class="px-20 pb-6 text-xs font-normal text-gray-400 font-Poppins"
                 >
                   It takes 2-3 weeks to get your first blog post ready. That
                   includes the in-depth research & creation of your monthly
@@ -325,17 +332,17 @@
               </details>
 
               <!--- Quest 2 -->
-              <details class="border rounded bg-white">
+              <details class="bg-white border rounded">
                 <summary
-                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                  class="flex items-center gap-6 py-3 text-sm list-none md:font-semibold md:text-sm px-9"
                 >
                   <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
-                  <p class="font-Poppins font-semibold text-sm">
+                  <p class="text-sm font-semibold font-Poppins">
                     How long until we deliver your first blog post?
                   </p>
                 </summary>
                 <p
-                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                  class="px-20 pb-6 text-xs font-normal text-gray-400 font-Poppins"
                 >
                   It takes 2-3 weeks to get your first blog post ready. That
                   includes the in-depth research & creation of your monthly
@@ -345,17 +352,17 @@
               </details>
 
               <!--- Quest 3 -->
-              <details class="border rounded bg-white">
+              <details class="bg-white border rounded">
                 <summary
-                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                  class="flex items-center gap-6 py-3 text-sm list-none md:font-semibold md:text-sm px-9"
                 >
                   <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
-                  <p class="font-Poppins font-semibold text-sm">
+                  <p class="text-sm font-semibold font-Poppins">
                     How long until we deliver your first blog post?
                   </p>
                 </summary>
                 <p
-                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                  class="px-20 pb-6 text-xs font-normal text-gray-400 font-Poppins"
                 >
                   It takes 2-3 weeks to get your first blog post ready. That
                   includes the in-depth research & creation of your monthly
@@ -368,20 +375,20 @@
             <!--- Column 2 -->
             <div
               id="group-2"
-              class="hidden md:inline-block services-category py-6 space-y-5"
+              class="hidden py-6 space-y-5 md:inline-block services-category"
             >
               <!--- Quest 1 -->
-              <details class="border rounded bg-white">
+              <details class="bg-white border rounded">
                 <summary
-                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                  class="flex items-center gap-6 py-3 text-sm list-none md:font-semibold md:text-sm px-9"
                 >
                   <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
-                  <p class="font-Poppins font-semibold text-sm">
+                  <p class="text-sm font-semibold font-Poppins">
                     How long until we deliver your first blog post?
                   </p>
                 </summary>
                 <p
-                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                  class="px-20 pb-6 text-xs font-normal text-gray-400 font-Poppins"
                 >
                   It takes 2-3 weeks to get your first blog post ready. That
                   includes the in-depth research & creation of your monthly
@@ -391,17 +398,17 @@
               </details>
 
               <!--- Quest 2 -->
-              <details class="border rounded bg-white">
+              <details class="bg-white border rounded">
                 <summary
-                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                  class="flex items-center gap-6 py-3 text-sm list-none md:font-semibold md:text-sm px-9"
                 >
                   <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
-                  <p class="font-Poppins font-semibold text-sm">
+                  <p class="text-sm font-semibold font-Poppins">
                     How long until we deliver your first blog post?
                   </p>
                 </summary>
                 <p
-                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                  class="px-20 pb-6 text-xs font-normal text-gray-400 font-Poppins"
                 >
                   It takes 2-3 weeks to get your first blog post ready. That
                   includes the in-depth research & creation of your monthly
@@ -411,17 +418,17 @@
               </details>
 
               <!--- Quest 3 -->
-              <details class="border rounded bg-white">
+              <details class="bg-white border rounded">
                 <summary
-                  class="list-none flex items-center gap-6 md:font-semibold md:text-sm text-sm px-9 py-3"
+                  class="flex items-center gap-6 py-3 text-sm list-none md:font-semibold md:text-sm px-9"
                 >
                   <img src="../Images/plus.svg" alt="plus-logo" class="w-6" />
-                  <p class="font-Poppins font-semibold text-sm">
+                  <p class="text-sm font-semibold font-Poppins">
                     How long until we deliver your first blog post?
                   </p>
                 </summary>
                 <p
-                  class="font-Poppins font-normal text-gray-400 text-xs px-20 pb-6"
+                  class="px-20 pb-6 text-xs font-normal text-gray-400 font-Poppins"
                 >
                   It takes 2-3 weeks to get your first blog post ready. That
                   includes the in-depth research & creation of your monthly
@@ -435,19 +442,19 @@
       </section>
 
       <!--- CTA -->
-      <section id="CTA" class="bg-cta-img bg-cover">
-        <div class="flex justify-center items-center">
-          <div class="px-100 py-32 max-w-3xl text-center">
+      <section id="CTA" class="bg-cover bg-cta-img">
+        <div class="flex items-center justify-center">
+          <div class="max-w-3xl py-32 text-center">
             <!--- Description -->
             <h1
-              class="font-Poppins font-semibold text-purpleFont text-xl md:text-5xl pb-8 md:pb-16"
+              class="pb-8 text-xl font-semibold font-Poppins text-purpleFont md:text-5xl md:pb-16"
             >
               Interested in growing your online presence?
             </h1>
 
             <!--- "Let's talk" button -->
             <button
-              class="font-Poppins font-normal text-sm text-white px-12 py-3 bg-purpleButton shadow-2xl"
+              class="px-12 py-3 text-sm font-normal text-white shadow-2xl font-Poppins bg-purpleButton"
             >
               Let's Talk
             </button>
@@ -460,52 +467,62 @@
     <footer>
       <div class="container bg-white">
         <div
-          class="py-7 flex justify-around md:flex-row flex-col-reverse md:py-0"
+          class="flex flex-col-reverse justify-around py-7 md:flex-row md:py-0"
         >
           <div class="max-w-52 py-7 md:pt-40">
             <h3
-              class="font-Poppins font-semibold text-lg text-purpleButton pb-4"
+              class="pb-4 text-lg font-semibold font-Poppins text-purpleButton"
             >
               Content...
             </h3>
-            <p class="font-Poppins font-normal text-gray-400 text-sm">
+            <p class="text-sm font-normal text-gray-400 font-Poppins">
               Got questions? Reach us at hey@email.com
             </p>
           </div>
 
-          <div class="md:flex gap-20 md:py-40">
+          <div class="gap-20 md:flex md:py-40">
             <div>
               <ul
-                class="font-Poppins font-normal text-gray-400 space-y-5 text-sm"
+                class="space-y-5 text-sm font-normal text-gray-400 font-Poppins"
               >
-                <li class="font-Poppins font-semibold text-black text-lg">
+                <li class="text-lg font-semibold text-black font-Poppins">
                   Menu
                 </li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact us</li>
-                <li>FAQ</li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#header">About</a></li>
+                <li><a href="#header">Contact us</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
               </ul>
             </div>
 
             <div>
               <ul
-                class="font-Poppins font-normal text-gray-400 space-y-5 text-sm pt-7 md:pt-0"
+                class="space-y-5 text-sm font-normal text-gray-400 font-Poppins pt-7 md:pt-0"
               >
-                <li class="font-Poppins font-semibold text-black text-lg">
+                <li class="text-lg font-semibold text-black font-Poppins">
                   Social
                 </li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
+                <li>
+                  <a href="https://twitter.com/" target="_blank">Twitter</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank"
+                    >Facebook</a
+                  >
+                </li>
               </ul>
             </div>
 
             <div>
               <ul
-                class="font-Poppins font-normal text-gray-400 space-y-5 text-sm pt-7 md:pt-0"
+                class="space-y-5 text-sm font-normal text-gray-400 font-Poppins pt-7 md:pt-0"
               >
-                <li class="font-Poppins font-semibold text-black text-lg">
+                <li class="text-lg font-semibold text-black font-Poppins">
                   Legal
                 </li>
                 <li>Terms of Use</li>
@@ -518,6 +535,6 @@
       </div>
     </footer>
 
-    <script src="./app.js" defer></script>
+    <script src="./app.js"></script>
   </body>
 </html>
